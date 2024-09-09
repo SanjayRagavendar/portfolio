@@ -200,9 +200,8 @@
         .footer {
           position: relative;
           width: 100%;
-          background: #3586;
+          background: #333;
           min-height: 100px;
-          padding: 20px 50px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -252,7 +251,7 @@
         
         .footer p {
           color: #fff;
-          margin: 15px 0 10px 0;
+          margin: 15px 0 10px 20px;
           font-size: 1rem;
           font-weight: 300;
         }
@@ -290,13 +289,13 @@
     <div class="header">
         <h1>Portfolio</h1>
         <div class="navBar">
-            <a href="/personal-portfolio.html#home">Contact</a>
-            <a href="/personal-portfolio.html#projects">Projects</a>
-            <a href="/personal-portfolio.html#about">About</a>
+            <a href="mailto:sanjayragavendar2610@gmail.com">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
         </div>
     </div>
 
-    <div class="profile-info home">
+    <div class="profile-info home" id="home">
 <!--         <img src="/images/portfolio.jpg" alt="Profile Image"> -->
         <div class="details">
             <strong>Sanjay Ragavendar</strong>
@@ -310,7 +309,7 @@
         <p id="about">I am a security researcher with a passion for cybersecurity and programming. I have experience in various areas of cybersecurity, such as penetration testing, digital forensics, and web application security. I enjoy working on projects that involve solving complex security challenges and developing innovative solutions to protect systems and data. I am constantly learning and exploring new technologies to stay up-to-date with the latest trends in cybersecurity and programming.</p>
     <h2 class="sub-heading">Projects</h2>
     <div class="container-flex">
-    <div class="project-container">
+    <div class="project-container" id="projects">
         <div class="project-card">
             <img src="images/stegPy-cover.jpg" alt="StegPy" class="project-image">
             <div class="project-description">
@@ -351,7 +350,7 @@
         </div>
     </div>
     </div>
-    <div class="container-flex">
+    <div class="container-flex" id="certifications">
         <h2 class="sub-heading">Certifications</h2>
         <div class="cert-row">
             <img src="images/ejpt.jpg" alt="EJPT" class="cert-image">
@@ -377,6 +376,8 @@
                 <div class="cert-link-box"><a href="https://archive.nptel.ac.in/noc/E_Certificate/NPTEL23CS20S1334918704255423" class="cert-link">Verify</a></div>
         </div>
     </div>
+    </div>
+    </div>
       <footer class="footer">
         
         <ul class="social-icon">
@@ -388,9 +389,9 @@
             </a></li>
         </ul>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#Home">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#Projects">Projects</a></li>
-          <li class="menu__item"><a class="menu__link" href="#Certifications">Certifications</a></li>
+          <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="#certifications">Certifications</a></li>
           <li class="menu__item"><a class="menu__link" href="mailto:sanjayragavendar2610@gmail.com">Contact</a></li>
     
         </ul>
