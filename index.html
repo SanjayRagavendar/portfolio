@@ -193,6 +193,65 @@
         .cert-row:hover {
             transform: translateY(-8px);
         }
+        .footer {
+          position: relative;
+          width: 100%;
+          background: #3586;
+          min-height: 100px;
+          padding: 20px 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        
+        .social-icon,
+        .menu {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
+          flex-wrap: wrap;
+        }
+        
+        .social-icon__item,
+        .menu__item {
+          list-style: none;
+        }
+        
+        .social-icon__link {
+          font-size: 2rem;
+          color: #fff;
+          margin: 0 10px;
+          display: inline-block;
+          transition: 0.5s;
+        }
+        .social-icon__link:hover {
+          transform: translateY(-10px);
+        }
+        
+        .menu__link {
+          font-size: 1.2rem;
+          color: #fff;
+          margin: 0 10px;
+          display: inline-block;
+          transition: 0.5s;
+          text-decoration: none;
+          opacity: 0.75;
+          font-weight: 300;
+        }
+        
+        .menu__link:hover {
+          opacity: 1;
+        }
+        
+        .footer p {
+          color: #fff;
+          margin: 15px 0 10px 0;
+          font-size: 1rem;
+          font-weight: 300;
+        }
         @media (max-width: 768px) {
             .project-container {
                 grid-template-columns: 1fr;
@@ -234,7 +293,7 @@
     </div>
 
     <div class="profile-info home">
-        <img src="/images/portfolio.jpg" alt="Profile Image">
+<!--         <img src="/images/portfolio.jpg" alt="Profile Image"> -->
         <div class="details">
             <strong>Sanjay Ragavendar</strong>
             <div class="typewriter-container">
@@ -314,10 +373,27 @@
                 <div class="cert-link-box"><a href="https://archive.nptel.ac.in/noc/E_Certificate/NPTEL23CS20S1334918704255423" class="cert-link">Verify</a></div>
         </div>
     </div>
-
-
-
+      <footer class="footer">
+        
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://linkedin.com/in/sanjay-ragavendar">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/SanjayRagvendar">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#Home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#Projects">Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="#Certifications">Certifications</a></li>
+          <li class="menu__item"><a class="menu__link" href="mailto:sanjayragavendar2610@gmail.com">Contact</a></li>
     
+        </ul>
+        <p>&copy;2024 Sanjay Ragavendar | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
     <script>
         const texts = ["Security Researcher", "Junior Penetration Tester", "Programmer"];
         let currentIndex = 0;
